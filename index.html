@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TESLA</title>
+  <link rel="icon" href="imgs/R.png" sizes="16x16" type="image/x-icon">
+   <link rel="stylesheet" href="carmodelinhome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+</head>
+
+<body >
+
+  <!-- Section NavBar -->
+
+  <script src="scrept.js"></script> <!-- ربط ملف JavaScript -->
+
+<div class="navdiv">
+  <!-- <img src="imgs/tesla-preview.png" alt="Overlay Image" class="overlay-image"> -->
+  <div><img class="logo"
+    src="https://th.bing.com/th/id/R.e488777d759169c74b74aa95f07adbed?rik=VWCMNP%2fO1MdzWQ&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fTesla-logo-2003-2500x2500.png&ehk=JNBLiptu%2fRFyW%2fKfTZ0WnRm0dTAAOD2QoMqcnnk71e0%3d&risl=&pid=ImgRaw&r=0"
+    alt="alternative"></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Cars-Model.html">Cars Model</a></li>
+      <li><a href="Shop.html">Shop Now</a></li>
+      <li><a href="About-Us.html">About Us</a></li>
+      <li><a href="Contact-Us.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+  
+  <!-- Section Video -->
+
+<section>
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="imgs/tesla.mp4" type="video/mp4">
+    </video>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Section : Carmodel -->
+
+  <section class="header" id="header">
+    <div class="hero">
+      <div class="row">
+        <div class="left-sec">
+          <div class="content">
+            <h2><span>Tesla</span><br>Models</h2>
+            <p>Electric cars are vehicles powered by electric motors
+              using energy stored in rechargeable batteries,
+              offering an eco-friendly alternative to traditional gas-powered cars.</p>
+          </div>
+          <button class="discover-btn">
+            <a href="Cars-Model.html">Learnmore..</a><span><i class="fa fa-arrow-circle-o"></i></span>
+          </button>
+          <div class="information">
+            <div class="production">
+              <h1>Production</h1>
+              <p>1966-2020</p>
+            </div>
+            <div class="production">
+              <h1>Designer</1>
+              <p>elon mask</p>
+            </div>
+          </div>  
+        </div>
+        <div class="right-sec">
+          <div class="my-car">
+            <div><img src="imgs/1.png"></div>
+            <div><img src="imgs/2.png"></div>
+            <div><img src="imgs/3.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".my-car").slick({
+      autoplay:true,
+      dots:true,
+      speed:1000,
+      customPaging : function(slider, i) {
+        var thumb = $ (slider.$slides[i]).data();
+        return '<a>'+(i+1)+'</a>';
+      },
+    })
+  });
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Section : Images -->
+
+<section id="banners" class="section-p1">
+  <div class="big-banners">
+    <div class="big-banners-1">
+      <h4>ofers</h4>
+      <h2>Tesla car</h2>
+      <span>free month sirvesic</span>
+      <button class="banner-btn">Learn More</button>
+    </div>
+    <div class="big-banners-2">
+      <h4>Cyper Truck</h4>
+      <h2>Most upgraded </h2>
+      <span>The Car in Tesla</span>
+      <button class="banner-btn">Couler</button>
+    </div>
+  </div>
+  <div class="small-banners">
+    <div class="small-banners-1">
+      <h2>SEASONAL SALE</h2>
+      <h5>Winter Collection 50% Off</h5>
+    </div>
+    <div class="small-banners-2">
+      <h2>NEW Car COLLECTION</h2>
+
+    </div>
+    <div class="small-banners-3">
+      <h2>model 3</h2>
+      
+    </div>
+  </div>
+</section>
+
+<section id="newsletter">
+  <div class="newsletter-text">
+    <h3>Sign Up For Newsletters</h3>
+    <h5>get e-mail updates about out latest shop and <span>special offers</span></h5>
+  </div>
+  <div class="form">
+    <input type="email" placeholder="Your email address" id="email-address-input">
+    <button>Sign Up</button>
+  </div>
+</section>
+
+</main>
+
+<!--footer section-->
+
+<footer>
+<div id="footer">
+  <div class="contact">
+    <a href="indext.html"><img class="suse" src="imgs/R.png" alt="" /></a>
+    <br> <br>
+    <br> 
+    <h3>Contact</h3>
+    <address>
+      <p><b>Address:</b> Wellington Road, Street 32. San Francisco</p>
+      <p><b>Phone:</b> Wellington Road, Street 32. San Francisco</p>
+      <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
+    </address>
+    <br> 
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="about">
+    <h3>About</h3>
+    <br> 
+    <a href="#">Home</a>
+    <a href="#">Car Models</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="myaccount ">
+    <h3>Our Models</h3>
+    <br> 
+    <a href="#">Model x</a>
+    <a href="#">Model y</a>
+    <a href="#">Model 3</a>
+    <a href="#">Cyper Truck</a>
+  </div>
+  <div class="install">
+    <h3>Install App</h3>
+    <br> 
+    <p>From App Store or Google Play</p>
+    <div class="download">
+      <a href="#"><img src="imgs/play.jpg" alt=""></a>
+      <a href="#"><img src="imgs/app.jpg" alt=""></a>
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="imgs/pay.png" alt="">
+  </div>
+  
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product.css"> <!-- ربط الـ CSS هنا -->
+</head>
+
+<body>
+  <div class="product-details">
+    <h1 id="product-name">Product Name</h1>
+    <img id="product-image" src="" alt="Product Image">
+    <p id="product-price">Price</p>
+    <p id="product-description">Description of the product.</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+
+    if (product) {
+      const productName = product.replace("-", " ").toUpperCase();  // تغيير اسم المنتج ليتناسب مع العرض
+      document.getElementById("product-name").innerText = productName;
+
+      // تغيير محتوى الصفحة بناءً على المنتج
+      if (product === "wall-connector") {
+        document.getElementById("product-image").src = "imgs/6r2c062c.png";  // Wall Connector Image
+        document.getElementById("product-price").innerText = "$420";
+        document.getElementById("product-description").innerText = "The Wall Connector is the most convenient charging solution for homes, apartments, and workplaces.";
+      } else if (product === "universal-wall-connector") {
+        document.getElementById("product-image").src = "imgs/6r2c062c.png";  // Universal Wall Connector Image
+        document.getElementById("product-price").innerText = "$650";
+        document.getElementById("product-description").innerText = "Universal Wall Connector for charging with wide compatibility.";
+      } else if (product === "mobile-connector") {
+        document.getElementById("product-image").src = "imgs/s0kh4wh8.png";  // Mobile Connector Image
+        document.getElementById("product-price").innerText = "$300";
+        document.getElementById("product-description").innerText = "Portable Mobile Connector for easy charging anywhere.";
+      } else if (product === "home-backup-bundle") {
+        document.getElementById("product-image").src = "imgs/d79k12p6.png";  // Home Backup Bundle Image
+        document.getElementById("product-price").innerText = "$350";
+        document.getElementById("product-description").innerText = "Home backup bundle with PowerShare technology for uninterrupted power.";
+      } else if (product === "Tesla-Bot-Action-Figure") {
+        document.getElementById("product-image").src = "imgs/l1.png";  // Lifestyle Product 1 Image
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Lifestyle Product 1 description.";
+      }else if (product === "On-the-Road-Vessel-P2M") {
+        document.getElementById("product-image").src = "imgs/l2.png";  // Lifestyle Product 2 Image
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Lifestyle Product 1 description.";
+      }else if (product === "Cybertruck-Wind-up-Racer") {
+        document.getElementById("product-image").src = "imgs/l3.png";  // Lifestyle Product 3 Image
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Lifestyle Product 1 description.";
+      }else if (product === "Levitating-Cybertruck") {
+        document.getElementById("product-image").src = "imgs/l4.png";  // Lifestyle Product 4 Image
+        document.getElementById("product-price").innerText = "$200";
+        document.getElementById("product-description").innerText = "Lifestyle Product 1 description.";
+      }else if (product === "Kids Cybertruck Headlight to Taillight Tee") {
+        document.getElementById("product-image").src = "imgs/kids1.png";  // Universal Wall Connector Image
+        document.getElementById("product-price").innerText = "$650";
+        document.getElementById("product-description").innerText = "Universal Wall Connector for charging with wide compatibility.";
+      } else if (product === "Kids Cybertruck Reflective Tee") {
+        document.getElementById("product-image").src = "imgs/kids2.png";  // Mobile Connector Image
+        document.getElementById("product-price").innerText = "$300";
+        document.getElementById("product-description").innerText = "Portable Mobile Connector for easy charging anywhere.";
+      } else if (product === "Kids Cybertruck Reflective Tee") {
+        document.getElementById("product-image").src = "imgs/l3.png";  // Home Backup Bundle Image
+        document.getElementById("product-price").innerText = "$350";
+        document.getElementById("product-description").innerText = "Home backup bundle with PowerShare technology for uninterrupted power.";
+      }else if (product === "Kids 3D T Logo Tee") {
+        document.getElementById("product-image").src = "imgs/kids4.png";  // Home Backup Bundle Image
+        document.getElementById("product-price").innerText = "$350";
+        document.getElementById("product-description").innerText = "Home backup bundle with PowerShare technology for uninterrupted power.";
+      }
+      // أضف باقي المنتجات حسب الحاجة
+    }
+  </script>
+</body>
+
+</html>

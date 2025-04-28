@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about-contact-us-style2.css">
+  <title>TESLA</title>
+  <link rel="icon" href="imgs/R.png" sizes="16x16" type="image/x-icon">
+  
+</head>
+
+
+   <style>
+    
+.bg{
+     background-image: url("imgs/B.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; 
+
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .form-container{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("E:/Prj2/imgs/car.jpg") no-repeat center/cover;
+    }
+    .form-container form{
+        width: 670px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        background: rgba(255, 255, 255,0.1);
+        backdrop-filter: blur(30px);
+        flex-wrap: wrap;
+    }
+    .form-container form h1{
+        color: #fff;
+        font-weight: 700;
+        line-height: 2;
+        margin-top: 20px;
+        width: 500px;
+        text-align: center;
+    }
+    .form-container form input{
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 10px;
+        background: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+    .form-container form input::placeholder{
+        color: #fff;
+    }
+    .form-container form #lastname,
+    .form-container form #mobile{
+        margin-left: 20px;
+    }
+    .form-container form h4{
+        color: #fff;
+        font-weight: 300;
+        width: 600px;
+        margin-top: 20px;
+    }
+    .form-container form textarea{
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 10px;
+        outline: none;
+        min-height: 90px;
+        min-width: 620px;
+        max-width: 620px;
+    }
+    .form-container form h4{
+        font-size: 20px;
+    }
+    .form-container form #button{
+        border: none;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        color: black;
+        width: 200px;
+        height: 60px;
+        padding: 0;
+        margin-bottom: 30px;
+        transition: 0.3s;
+    }
+    .form-container form #button:hover{
+        background: #000;
+        color: #fff;
+        transition: .5s ease-in-out;
+    }
+.body {
+
+  background-image: url("C:/Users/SmartOS/Desktop/00/Prj2/imgs/B.png");
+
+}
+
+   </style>
+</head>
+
+
+
+<body class="bg">
+  <div class="navdiv">
+    <!-- <img src="imgs/tesla-preview.png" alt="Overlay Image" class="overlay-image"> -->
+    <div><img class="logo"
+        src="https://th.bing.com/th/id/R.e488777d759169c74b74aa95f07adbed?rik=VWCMNP%2fO1MdzWQ&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fTesla-logo-2003-2500x2500.png&ehk=JNBLiptu%2fRFyW%2fKfTZ0WnRm0dTAAOD2QoMqcnnk71e0%3d&risl=&pid=ImgRaw&r=0"
+        alt="alternative"> 
+      
+      </div>
+
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Cars-Model.html">Cars Model</a></li>
+      <li><a href="Shop.html">Shop Now</a></li>
+      <li><a href="About-Us.html">About Us</a></li>
+      <li><a href="Contact-Us.html">Contact Us</a></li>
+    </ul>
+  </div>
+  </div>
+<body> 
+   <div class="form-container">
+    <form>
+        <h1>Contact Us From</h1>
+        <input type="text" id="firstname" placeholder="First Name" required>
+        <input type="text" id="lastname" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="mobile" placeholder="Mobile" required>
+        <h4>Type Your Message Here....</h4>
+        <textarea required></textarea>
+        <input type="submit" value="send" id="button"/>
+
+    </form>
+   
+  </div>
+ 
+
+</body>
+</html>
+
