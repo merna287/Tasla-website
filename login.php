@@ -87,7 +87,7 @@ try {
           <form method="POST">
             <div class="input-group">
               <input type="text" name="email" placeholder="Email" 
-                     value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>" required>
+                    value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>" required>
               <span class="icon"></span>
             </div>
             <div class="input-group">

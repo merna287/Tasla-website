@@ -12,10 +12,7 @@
   <div class="container">
     <div class="login-box">
       <div class="login-tab">Register</div>
-      <?php if (isset($_GET['error'])): ?>
-        <div class="error-message"><?php echo htmlspecialchars($_GET['error']); ?></div>
-      <?php endif; ?>
-      <form action="register.php" method="POST">
+      <form id="registerForm">
         <div class="input-group">
           <input type="text" name="name" placeholder="Full Name" required />
           <span class="icon"></span>
@@ -40,5 +37,33 @@
       </form>
     </div>
   </div>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      
+      fetch('register.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          window.location.href = data.redirect;
+        } else {
+          // Show all errors as alerts
+          data.errors.forEach(error => {
+            alert(error);
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred during registration');
+      });
+    });
+  </script>
 </body>
 </html>
