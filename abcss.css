@@ -91,12 +91,20 @@ color: #fff;
   width: 15px;
 }
 .slider-wrapper .sweiper-slied-button{
+<<<<<<< HEAD
   color: #fff;
+=======
+  color: #000000;
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   margin-top: -50px;
   transition: 0.2s ease;
 }
 .slider-wrapper .sweiper-slied-button:hover{
+<<<<<<< HEAD
   color: #4658ff;
+=======
+  color: red;
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
 }
 @media (max-width: 768px) {
   .slider-wrapper{

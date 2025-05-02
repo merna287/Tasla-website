@@ -27,7 +27,11 @@
   
   .logo{
       width: 80px;
+<<<<<<< HEAD
       height: 80px;
+=======
+      height: 50px;
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   }
   
   
@@ -38,7 +42,11 @@
   }
   .navdiv li a{
       position: relative;
+<<<<<<< HEAD
       color: rgb(2, 2, 2);
+=======
+      color: rgb(0, 0, 0);
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
       font-size: 18px;
       font-weight: bold;
       margin-right: 25px;
@@ -401,8 +409,12 @@
     padding: 75px;
     background-color: #ececec;
   }
+<<<<<<< HEAD
   #footer div{
   }
+=======
+
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   #footer p, #footer a{
     color: rgb(109, 109, 109);
     text-decoration: none;

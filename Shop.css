@@ -1,4 +1,5 @@
 .primary-btn {
+<<<<<<< HEAD
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     font-size: 16px; /* Text size */
@@ -46,6 +47,67 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
   }
   
+=======
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.primary-btn:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Raise button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.primary-btn:active {
+  background-color: #3e8e41; /* Even darker green when pressed */
+  transform: translateY(1px); /* Button sinks slightly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.primary-btn:focus {
+  outline: none; /* Remove outline */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove box-shadow when focused */
+}
+
+.secondary-btn {
+  background-color: #156fd0; /* Blue background */
+  color: white; /* White text */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.secondary-btn:hover {
+  background-color: #156fd0; /* Slightly darker blue on hover */
+  transform: translateY(-2px); /* Raise button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.secondary-btn:active {
+  background-color: #156fd0; /* Even darker blue when pressed */
+  transform: translateY(1px); /* Button sinks slightly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.secondary-btn:focus {
+  outline: none; /* Remove outline */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove box-shadow when focused */
+}
+
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   
   .unselectable {
       user-select: none; 

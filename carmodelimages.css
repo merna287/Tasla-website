@@ -85,7 +85,11 @@
   }
   .navdiv li a{
       position: relative;
+<<<<<<< HEAD
       color: white;
+=======
+      color: rgb(0, 0, 0);
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
       font-size: 18px;
       font-weight: bold;
       margin-right: 25px;
@@ -93,14 +97,22 @@
   
   .navdiv a:hover {
      
+<<<<<<< HEAD
   color: #f1eeee ;
+=======
+  color: #ea1538 ;
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   transition: .5s;
   
   }
   a:after{
   content: "";
   position: absolute;
+<<<<<<< HEAD
   background-color: #f4eeef;
+=======
+  background-color: #ea1538;
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   height: 3px;
   width: 0;
   left: 0;
@@ -262,7 +274,11 @@
   .hero-section2{
     position: relative;
     height: 100vh;
+<<<<<<< HEAD
     background: url('imgs/m/3.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+=======
+    background: url('imgs/model s.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,6 +323,59 @@
   }
   /*CYBERTRUCK END*/
   
+<<<<<<< HEAD
+=======
+  /*CYBERTRUCK START*/
+  /* Hero Section */
+  .hero-section3{
+    position: relative;
+    height: 100vh;
+    background: url('imgs/CyT.jpg') no-repeat center center/cover; /* Replace 'car-image.jpg' with the image file path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Overlay for Dim Effect */
+  .hero-section3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content Section */
+  .hero-section3 .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section3 h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .hero-section3 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  .hero-section3 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /*CYBERTRUCK END*/
+
+>>>>>>> c1de533c0b7e63401e0e7f3b643b6a2d2a0346ae
   /*Car Models END*/
   
   
